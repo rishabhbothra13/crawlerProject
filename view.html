@@ -1,0 +1,23 @@
+<html>
+<body>
+	<table style="width:100%" border: 1px solid black>
+		<tr>
+			<th><h3>Job No.</h3></th>
+			<th><h3>Designation</h3></th>
+			<th><h3>Company Name</h3></th>
+			<th><h3>Experience</h3></th>
+			<th><h3>Location</h3></th>
+			<th><h3>About Company</h3></th>
+		</tr>
+		{% for per in params%}
+		<tr>
+			<td>{{per.0}}</td>
+			<td>{{per.1}}</td>
+			<td>{{per.2}}</td>
+			<td>{{per.3}}</td>
+			<td>{{per.4}}</td>
+			<td>{{per.5}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
